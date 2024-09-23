@@ -1,0 +1,213 @@
+/* General */
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    background-color: #d6dbe0;
+    color: #333;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+}
+
+/* Iconos sociales */
+.social-icons a {
+    color: #fff; /* Color blanco para los iconos */
+    margin-left: 15px; /* Espacio entre los iconos */
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Color azul cuando se hace hover sobre los iconos */
+}
+
+
+/* Header */
+header {
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+blockquote {
+    font-style: italic;
+    color: #dcdcdc;
+}
+
+/* Sección de "Sobre mí" y "Formación" */
+#personal {
+    padding: 10px 0; /* Reducimos el espacio superior e inferior */
+}
+
+#personal img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Añadimos margen a la derecha para separar de los textos */
+}
+
+#personal h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+#personal p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Aseguramos que la imagen y los textos estén bien alineados en pantallas grandes */
+@media (min-width: 768px) {
+    #personal .col-md-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #personal .col-md-8 {
+        display: flex;
+        padding-left: 18%;
+        flex-direction: column;
+        justify-content: center; /* Alineamos verticalmente los textos */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #personal img {
+        margin-bottom: 20px; /* Margen inferior cuando la imagen se apile sobre los textos */
+    }
+}
+
+
+/* Skills Section - Alinear en paralelo */
+#skills {
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+}
+
+#hard-skills, #soft-skills {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#skills ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#skills ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#skills ul li img {
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#hard-skills ul li {
+    color: #28a745;
+}
+
+#soft-skills ul li {
+    color: #17a2b8;
+}
+
+/* Formulario de contacto */
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+#contacto{
+    width: 90%;
+    margin: auto;
+}
+
+#contacto .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 27%;
+    margin-left: 10%;
+}
+
+#contacto .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    width: 27%;
+    margin-left: 30%;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header, section {
+        text-align: center;
+    }
+
+    #personal img {
+        margin: 0 auto;
+    }
+}
